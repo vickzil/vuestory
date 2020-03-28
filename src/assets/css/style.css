@@ -400,51 +400,6 @@ header .carousel-item p {
 
 /*Modal/form*/
 
-#overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.6);
-  transition: 800ms ease;
-  z-index: 1000;
-  overflow: auto;
-  width: 100%;
-  cursor: pointer;
-}
-
-#overlay::-webkit-scrollbar {
-  width: 0px;
-  background: #777;
-}
-
-#overlay-close {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.6);
-  transition: 800ms ease;
-  z-index: 1000;
-  overflow: auto;
-  width: 100%;
-  cursor: pointer;
-}
-
-.modal-dialog {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: 800ms ease;
-  z-index: 2000;
-  overflow: auto;
-  width: 100%;
-}
-
 .modal-dialog .modal-content {
   background: #333 !important;
   box-shadow: 0px 2px 3px #555;

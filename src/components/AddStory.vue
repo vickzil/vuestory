@@ -54,7 +54,11 @@ smarttabs: true */
                     />
                   </div>
                   <div class="form-group col-md-6">
-                    <select class="form-control" v-model="stori.gender" id="gender">
+                    <select
+                      class="form-control"
+                      v-model="stori.gender"
+                      id="gender"
+                    >
                       <option value="Male">Male</option>
                       <option value="Female">Female</option>
                     </select>
@@ -101,7 +105,8 @@ smarttabs: true */
       <a
         class="btn-floating btn-large waves-effect waves-light green"
         @click="showAddModal = true"
-      >Add +</a>
+        >Add +</a
+      >
     </div>
   </div>
 </template>
@@ -227,5 +232,61 @@ export default {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: 800ms ease;
+  z-index: 1000;
+  overflow: auto;
+  width: 100%;
+  cursor: pointer;
+}
+
+#overlay::-webkit-scrollbar {
+  width: 0px;
+  background: #777;
+}
+
+#overlay-close {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: 800ms ease;
+  z-index: 1000;
+  overflow: auto;
+  width: 100%;
+  cursor: pointer;
+}
+
+#overlay-close::-webkit-scrollbar {
+  width: 0px;
+}
+
+.modal-dialog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 800ms ease;
+  z-index: 2000;
+  overflow: auto;
+  width: 100%;
+}
+
+#overlay-close::-webkit-scrollbar {
+  width: 0px;
+}
+
+.modal-dialoge::-webkit-scrollbar {
+  width: 0px;
 }
 </style>
